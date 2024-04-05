@@ -2,12 +2,14 @@ package View;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
 public class AjouterVue extends JPanel {
 
-    public AjouterVue() {
+    public AjouterVue(JFrame fenetre) {
         super(new FlowLayout());
         JTextField titreTache = new JTextField();
         JTextField descriptionTache = new JTextField();
@@ -15,7 +17,9 @@ public class AjouterVue extends JPanel {
         JFormattedTextField date = new JFormattedTextField(Date_Format);
         JButton ajouter =new JButton("Ajouter");
         JButton boutonAccueil = new JButton("Retourner à l'accueil");
-        //boutonAccueil.addActionListener();
+        boutonAccueil.addActionListener((ActionListener) e -> {
+            fenetre.setContentPane(MenuVue.getInstance(fenetre));
+        });
 
         add(titreTache);
         add(descriptionTache);
