@@ -10,6 +10,13 @@ Ce document récapitule les réalisations effectuées dans le cadre du TP de ges
 - [ ] Bouton "Ajouter".
 - [ ] Test unitaire associé.
 
+Deux vue, un controller, un model et le début pour le manipuler :
+- Ajouter Vue
+- Menu Vue (singleton pour en avoir une unique)
+- ControllerAjouter
+- Task
+- GestionnaireTaskInterface(qui pourrait servire à un stratégie)
+
 (Explication et justification de ce qui a été fait...)
 
 ### Modification d'une tâche
