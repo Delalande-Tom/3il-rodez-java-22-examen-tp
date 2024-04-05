@@ -20,6 +20,12 @@ public class AjouterVue extends JPanel {
         boutonAccueil.addActionListener((ActionListener) e -> {
             fenetre.setContentPane(MenuVue.getInstance(fenetre));
         });
+        
+        ajouter.addActionListener((ActionListener) e -> {
+            String[] textes = {"bla"};
+            MenuVue.getInstance(fenetre).visualiserTaches(textes);
+        });
+
 
         add(titreTache);
         add(descriptionTache);
